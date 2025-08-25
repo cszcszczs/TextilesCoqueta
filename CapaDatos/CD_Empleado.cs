@@ -8,11 +8,17 @@ using System.IO;
 
 namespace CapaDatos
 {
-    internal class CD_Empleado
+    public class CD_Empleado
     {
-        private Empleado empleado = new Empleado();
+        private readonly string ruta;
 
-        private string ruta = "C:\\Users\\USUARIO\\Documents\\empleados.txt";
+        // constructor para inicializar la ruta del archivo dinamicamente
+        public CD_Empleado()
+        {
+            ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "empleados.txt");
+        }
+
+        private Empleado empleado = new Empleado();
 
         public void RegistrarEmpleado(Empleado empleado)
         {

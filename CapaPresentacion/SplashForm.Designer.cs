@@ -36,9 +36,12 @@
             // 
             // ptbLogo
             // 
-            this.ptbLogo.Location = new System.Drawing.Point(-1, -1);
+            this.ptbLogo.Image = global::CapaPresentacion.Properties.Resources.WhatsApp_Image_2025_08_25_at_1_21_47_PM;
+            this.ptbLogo.Location = new System.Drawing.Point(0, 0);
+            this.ptbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(800, 450);
+            this.ptbLogo.Size = new System.Drawing.Size(600, 366);
+            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbLogo.TabIndex = 0;
             this.ptbLogo.TabStop = false;
             // 
@@ -50,12 +53,13 @@
             // 
             // SplashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.ControlBox = false;
             this.Controls.Add(this.ptbLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
